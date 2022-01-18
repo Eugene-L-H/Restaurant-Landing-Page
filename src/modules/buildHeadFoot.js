@@ -1,18 +1,38 @@
-export const navMenu = () => {
-  const menu = document.createElement('div');
-  menu.setAttribute('class', 'menu');
+const buildNavMenu = () => {
+  // Create navigation menu in header  
+  const navMenu = document.createElement('div');
+  navMenu.setAttribute('class', 'navMenu');
 
-  const home = document.createElement('a');
+  // Create tabs for navagation menu
+  const homeTab = document.createElement('div');
+  homeTab.setAttribute('class', 'tab');
+  homeTab.textContent = 'Home';
+
+  const menuTab = document.createElement('div');
+  menuTab.setAttribute('class', 'tab');
+  menuTab.textContent = 'Menu';
+
+  const contactTab = document.createElement('div');
+  contactTab.setAttribute('class', 'tab');
+  contactTab.textContent = 'Contact';
+
+  navMenu.append(homeTab);
+  navMenu.append(menuTab);
+  navMenu.append(contactTab);
+
+  return navMenu;
 }
 
 export const buildHeader = () => {
   const header = document.createElement('header');
-  let title = document.createElement('div');
+  let title = document.createElement('h1');
   title.setAttribute('id', 'title');
   title.textContent = 'Cafe Bistro';
 
   content.append(header);
   header.append(title);
+  const navMenu = buildNavMenu();
+  header.append(navMenu);
 
   // Change top banner from translucent to solid on scroll
   const changeOpacity = (scroll) => {
