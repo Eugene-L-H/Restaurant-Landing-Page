@@ -66,6 +66,7 @@ table {
 #content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 120vh;
 }
 
@@ -82,7 +83,8 @@ header {
 .navMenu {
   display: flex;
   position: absolute;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 3.5vh;
   font-family: sans-serif;
   font-size: 1.6vh;
   font-style: oblique;
@@ -102,6 +104,7 @@ header {
   color: #EEE;
 }
 
+/* Home page */
 .description {
   display: flex;
   justify-content: center;
@@ -111,7 +114,7 @@ header {
   width: 100vw;
   color: #EEE;
   background-color: rgb(0, 0, 0, 0.85);
-  padding: 3vh 0;
+  padding: 4vh 0;
   margin-top: 50vh;
 }
 
@@ -127,6 +130,10 @@ header {
     width: 60vw;
     font-size: 1.8vh
   }
+
+  footer {
+    font-size: 1.3vh;
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -134,6 +141,30 @@ header {
     width: 550px;
     font-size: 2.2vh;
   }
+}
+/* End home page */
+
+/* Menu page */
+.menuBorder {
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  height: 85vh;
+  background-color: rgb(0, 0, 0, 0.75);
+  margin-top: 25vh;
+}
+/* End menu page */
+
+/* Contact page */
+.contactSquare {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: 30vh;
+  color: #eee;
+  background-color: rgb(0, 0, 0, 0.85);
+  margin-top: 45vh;
 }
 
 footer {
@@ -148,6 +179,11 @@ footer {
   margin: auto auto 0 auto;
 }
 
+footer p {
+  text-align: center;
+}
+
+
 footer a {
   text-decoration: none;
   color: #388080;
@@ -156,4 +192,10 @@ footer a {
 footer a:hover {
   color: gold;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 400px) {
+  footer {
+    font-size: 1.3vh;
+  }
 }

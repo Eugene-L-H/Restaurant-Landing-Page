@@ -6,14 +6,17 @@ const buildNavMenu = () => {
   // Create tabs for navagation menu
   const homeTab = document.createElement('div');
   homeTab.setAttribute('class', 'tab');
+  homeTab.setAttribute('id', 'homeTab');
   homeTab.textContent = 'Home';
 
   const menuTab = document.createElement('div');
   menuTab.setAttribute('class', 'tab');
+  menuTab.setAttribute('id', 'menuTab');
   menuTab.textContent = 'Menu';
 
   const contactTab = document.createElement('div');
   contactTab.setAttribute('class', 'tab');
+  contactTab.setAttribute('id', 'contactTab');
   contactTab.textContent = 'Contact';
 
   navMenu.append(homeTab);
