@@ -9,3 +9,4 @@ export const navTabMenu = () => {
   menuBorder.append(menuImage);
   return menuBorder;
 }
+
