@@ -174,19 +174,27 @@ header {
 /* Contact page */
 .contactSquare {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 4.5vh;
   width: 50vw;
   height: 30vh;
+  font-size: 2.5vh;
   color: #eee;
   background-color: rgb(0, 0, 0, 0.85);
   margin-top: 45vh;
 }
 
+.contactSquare a {
+  text-decoration: none;
+}
+/* End contact page */
+
 footer {
   display: flex;
   justify-content: space-around;
-  width: 100vw;
+  width: 100%;
   font-size: 1.5vh;
   font-style: italic;
   color: #d4d4d4;
@@ -205,6 +213,7 @@ footer a {
   color: #388080;
 }
 
+.contactSquare a:hover,
 footer a:hover {
   color: gold;
   text-decoration: underline;
