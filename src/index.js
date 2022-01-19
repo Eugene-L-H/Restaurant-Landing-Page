@@ -1,9 +1,9 @@
 import { buildHeader } from './modules/buildHeadFoot.js';
 import { buildFooter } from './modules/buildHeadFoot.js';
 import { pageLoad } from './modules/pageload.js';
-import { navTabHome} from './modules/navTabFunctions.js';
-import { navTabMenu} from './modules/navTabFunctions.js';
-import { navTabContact} from './modules/navTabFunctions.js';
+import { navTabHome} from './modules/navTabHome.js';
+import { navTabMenu} from './modules/navTabMenu.js';
+import { navTabContact} from './modules/navTabContact.js';
 
 
 
@@ -17,6 +17,7 @@ const pageContent = document.querySelector('#pageContent');
 homeTab.addEventListener('click', () => {
   pageContent.innerHTML = '';
   pageContent.append(navTabHome());
+  body.style('height', '100vh');
 })
 
 menuTab.addEventListener('click', () => {
