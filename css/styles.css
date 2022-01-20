@@ -177,6 +177,7 @@ header {
 .contactSquare a {
   text-decoration: none;
   color: #ff0037;
+  margin-top: -3vh;
 }
 /* End contact page */
 

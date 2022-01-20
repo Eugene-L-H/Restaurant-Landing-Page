@@ -14,10 +14,10 @@ export const navTabContact = () => {
   let emailLink = document.createElement('a');
   emailLink.setAttribute('href', '#');
   emailLink.textContent = 'theeats@cafebistro.com'; 
-  email.append(emailLink);
-
+  
   contactSquare.append(phoneNumber);
   contactSquare.append(splitOr);
   contactSquare.append(email);
+  contactSquare.append(emailLink);
   return contactSquare;
 }
