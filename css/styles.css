@@ -74,6 +74,7 @@ table {
 header {
   position: fixed;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 20vh;
@@ -83,10 +84,15 @@ header {
   background-color: rgb(0, 0, 0, 0.75);
 }
 
+#title {
+  position: absolute;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 7vh;
+  color: #EEE;
+}
+
 .navMenu {
-  position: absolute;
   display: flex;
-  position: absolute;
   justify-content: center;
   gap: 3.5vh;
   font-family: sans-serif;
@@ -94,18 +100,12 @@ header {
   font-style: oblique;
   width: 12.5vw;
   color: #fff;
-  margin-top: 15vh
+  margin-top: 15vh;
 }
 
 .tab:hover {
   color: #388080;
   cursor: pointer;
-}
-
-#title {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 7vh;
-  color: #EEE;
 }
 
 #pageContent {

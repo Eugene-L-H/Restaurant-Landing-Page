@@ -38,18 +38,12 @@ export const buildHeader = () => {
   header.append(navMenu);
 
   // Change top banner from translucent to solid on scroll
-  const changeOpacity = (scroll) => {
-    if (scroll === 0) {
-      header.setAttribute('style', '  background-color: rgb(0, 0, 0, 0.75);')
-    } else {     
+  const changeOpacity = () => {  
       header.setAttribute('style', 'background-color: #000;')
     }
-  }
 
   // Change solid top banner back to translucent when page scroll at top
-  const scollPosition = document.querySelector('#scrollable');
-  console.log(scollPosition);
-  document.addEventListener('scroll', () => { changeOpacity(scollPosition) });
+  document.addEventListener('scroll', () => { changeOpacity() });
 }
 
 export const buildFooter = () => {
